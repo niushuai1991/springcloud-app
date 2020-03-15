@@ -30,17 +30,6 @@ public class ScheduleJobController {
     @Autowired
     private SystemAPI client;
 
-    /**
-     * 获取定时任务 json
-     */
-    @PreAuthorize("hasAuthority('/system/dict/list')")
-    @RequestMapping("/list")
-    @ResponseBody
-    public Object getAllJobs() {
-
-        return new HashMap<>();
-    }
-
     @RequestMapping("/add")
     @ResponseBody
     public Object add(String text) {
